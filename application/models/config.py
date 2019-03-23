@@ -1,9 +1,9 @@
 import web
 
 db_host = 'localhost'
-db_name = 'contacts_kuorra'
-db_user = 'kuorra'
-db_pw = 'kuorra.2019'
+db_name = 'ferreteria_dbp'
+db_user = 'quetzal'
+db_pw = 'quetzal.2019'
 
 db = web.database(
     dbn='mysql',
