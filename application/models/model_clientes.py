@@ -27,10 +27,9 @@ def delete_clientes(id_cliente):
         print "Model delete Message {}".format(e.message)
         return None
 
-def insert_clientes(id_cliente,nombre,apellido_paterno,apellido_materno,telefono,email):
+def insert_clientes(nombre,apellido_paterno,apellido_materno,telefono,email):
     try:
         return db.insert('clientes',
-                id_cliente=id_cliente,
                 nombre=nombre,
                 apellido_paterno=apellido_paterno,
                 apellido_materno=apellido_materno,
