@@ -1,4 +1,4 @@
-CREATE DATABASE contacts_kuorra;
+CREATE DATABASE ferreteria_DBP;
 
 USE ferreteria_DBP;
 

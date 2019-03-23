@@ -12,12 +12,12 @@ if ssl == True:
     CherryPyWSGIServer.ssl_private_key = "ssl/server.key"
 
 urls = (
-    '/', 'application.controllers.persons.index.Index',
-    '/insert', 'application.controllers.persons.insert.Insert',
-    '/update/(.+)', 'application.controllers.persons.update.Update',
-    '/view/(.+)', 'application.controllers.persons.view.View',
-    '/delete/(.+)', 'application.controllers.persons.delete.Delete',
-    '/api_persons/?', 'application.api.persons.api_persons.Api_persons'
+    '/', 'application.controllers.clientes.index.Index',
+    '/insert', 'application.controllers.clientes.insert.Insert',
+    '/update/(.+)', 'application.controllers.clientes.update.Update',
+    '/view/(.+)', 'application.controllers.clientes.view.View',
+    '/delete/(.+)', 'application.controllers.clientes.delete.Delete',
+    '/api_persons/?', 'application.api.clientes.api_persons.Api_persons'
 )
 
 if __name__ == "__main__":
