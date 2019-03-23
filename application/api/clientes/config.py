@@ -1,3 +1,3 @@
 import web
-import application.models.model_persons
-model = application.models.model_persons
+import application.models.model_clientes
+model = application.models.model_clientes
