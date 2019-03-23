@@ -6,13 +6,13 @@ class Insert:
         pass
 
     def GET(self):
-        persons = config.form_persons()
-        return config.render.insert(persons)
+        clientes = config.form_clientes()
+        return config.render.insert(clientes)
 
     def POST(self):
-        persons = config.form_persons()
-        if persons.validates():
-            config.model.insert_persons(**persons.d)
+        clientes = config.form_clientes()
+        if clientes.validates():
+            config.model.insert_clientes(**clientes.d)
             raise config.web.seeother('/')
         else:
-            return config.render.insert(persons)
+            return config.render.insert(clientes)

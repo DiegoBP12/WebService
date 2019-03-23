@@ -6,6 +6,6 @@ class Index:
         pass
 
     def GET(self):
-        result = config.model.get_all_persons()
+        result = config.model.get_all_clientes()
         return config.render.index(result)
     

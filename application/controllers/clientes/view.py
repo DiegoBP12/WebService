@@ -5,6 +5,6 @@ class View:
     def __init__(self):
         pass
 
-    def GET(self, id_person):
-        result = config.model.get_persons(id_person)
+    def GET(self, id_cliente):
+        result = config.model.get_clientes(id_cliente)
         return config.render.view(result)
