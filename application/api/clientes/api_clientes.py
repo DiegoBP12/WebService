@@ -81,7 +81,7 @@ class Api_clientes:
             user_hash = user_data.user_hash  # user validation
             action = user_data.action  # action GET, PUT, DELETE, UPDATE
             id_cliente=user_data.id_cliente
-            nombre=user_data.name
+            nombre=user_data.nombre
             apellido_paterno=user_data.apellido_paterno
             apellido_materno=user_data.apellido_materno
             telefono=user_data.telefono
