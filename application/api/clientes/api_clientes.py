@@ -32,9 +32,9 @@ class Api_clientes:
             return json.dumps(clientes_json)
 
 # https://0.0.0.0:8080/api_clientes?user_hash=12345&action=put&id_cliente=1&nombre=new&apellido_paterno=new&apellido_materno=new&telefono=12345&email=new@email.com
-    def put(self,nombre,apellido_paterno,apellido_materno,telefono,email):
+    def put(self,id_cliente,nombre,apellido_paterno,apellido_materno,telefono,email):
         try:
-            config.model.insert_clientes(nombre,apellido_paterno,apellido_materno,telefono,email)
+            config.model.insert_clientes(id_cliente,nombre,apellido_paterno,apellido_materno,telefono,email)
             clientes_json = '[{200}]'
             web.header('Content-Type', 'application/json')
             return json.dumps(clientes_json)
@@ -94,7 +94,7 @@ class Api_clientes:
                 elif action == 'get':
                     return self.get(id_cliente)
                 elif action == 'put':
-                    return self.put(nombre,apellido_paterno,apellido_materno,telefono,email)
+                    return self.put(id_cliente,nombre,apellido_paterno,apellido_materno,telefono,email)
                 elif action == 'delete':
                     return self.delete(id_cliente)
                 elif action == 'update':
